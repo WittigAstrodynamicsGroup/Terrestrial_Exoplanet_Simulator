@@ -1,68 +1,9 @@
-[![Version](https://img.shields.io/badge/rebound-v3.19.2-green.svg?style=flat)](https://rebound.readthedocs.org)
-[![PyPI](https://badge.fury.io/py/rebound.svg)](https://badge.fury.io/py/rebound)
-[![GPL](https://img.shields.io/badge/license-GPL-green.svg?style=flat)](https://github.com/hannorein/rebound/blob/main/LICENSE)
-[![Travis](https://api.travis-ci.org/hannorein/rebound.svg?branch=main)](https://travis-ci.org/hannorein/rebound/)
-[![Paper](https://img.shields.io/badge/arXiv-1110.4876-green.svg?style=flat)](https://arxiv.org/abs/1110.4876)
-[![Paper](https://img.shields.io/badge/arXiv-1409.4779-green.svg?style=flat)](https://arxiv.org/abs/1409.4779)
-[![Paper](https://img.shields.io/badge/arXiv-1506.01084-green.svg?style=flat)](https://arxiv.org/abs/1506.01084)
-[![Paper](https://img.shields.io/badge/arXiv-1603.03424-green.svg?style=flat)](https://arxiv.org/abs/1603.03424)
-[![Paper](https://img.shields.io/badge/arXiv-1701.07423-green.svg?style=flat)](https://arxiv.org/abs/1701.07423)
-[![Paper](https://img.shields.io/badge/arXiv-1704.07715-green.svg?style=flat)](https://arxiv.org/abs/1704.07715)
-[![Paper](https://img.shields.io/badge/arXiv-1903.04972-green.svg?style=flat)](https://arxiv.org/abs/1903.04972)
-[![Paper](https://img.shields.io/badge/arXiv-1907.11335-green.svg?style=flat)](https://arxiv.org/abs/1907.11335)
-[![Docs](https://readthedocs.org/projects/rebound/badge/?version=latest)](https://rebound.readthedocs.io/en/latest/?badge=latest)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/hannorein/rebound/main)
-    
-
+<!-- 
 # Welcome to REBOUND
 
 ![REBOUND Examples](docs/img/reboundbanner.png)
 
 REBOUND is an N-body integrator, i.e. a software package that can integrate the motion of particles under the influence of gravity. The particles can represent stars, planets, moons, ring or dust particles. REBOUND is very flexible and can be customized to accurately and efficiently solve many problems in astrophysics.  
-
-## Features
-
-* Symplectic integrators (WHFast, SEI, LEAPFROG, EOS)
-* High order symplectic integrators for integrating planetary systems (SABA, WH Kernel methods)
-* Hybrid symplectic integrators for planetary dynamics with close encounters (MERCURIUS)
-* High accuracy non-symplectic integrators with adaptive time-stepping (IAS15, Gragg-Bulirsch-Stoer)
-* Can integrate arbitrary user-defined ODEs that are coupled to N-body dynamics for tides, spin, etc
-* Support for collisional/granular dynamics, various collision detection routines
-* The code is written entirely in C, conforms to the ISO standard C99 and can be used as a thread-safe shared library
-* Easy-to-use Python module, installation in 3 words: `pip install rebound`
-* Extensive set of example problems in both C and Python
-* Real-time, 3D OpenGL visualization (C version)
-* Parallelized with OpenMP (for shared memory systems)
-* Parallelized with MPI is supported for some special use cases only (using an essential tree for gravity and collisions)
-* No dependencies on external libraries (use of OpenGL/glfw3 for visualization is optional)
-* The code is 100% open-source. All features are inluced in the public repository on [github](https://github.com/hannorein/rebound)
-* No configuration is needed to run any of the example problems. Just type `make && ./rebound` in the problem directory to run them
-* Comes with standard ASCII or binary output routines
-* Different modules are easily interchangeable at runtime
-
-## One minute installation
-
-You can install REBOUND with pip if you want to only use the python version of REBOUND:
-
-    pip install rebound
-
-Then, you can run a simple REBOUND simulation such as
-
-```python
-import rebound
-sim = rebound.Simulation()
-sim.add(m=1.0)
-sim.add(m=1.0e-3, a=1.0)
-sim.integrate(1000.)
-sim.status()
-```
-
-If you want to use the C version of REBOUND simply copy and paste this line into your terminal (it won't do anything bad, we promise):
-
-```bash
-git clone https://github.com/hannorein/rebound && cd rebound/examples/shearing_sheet && make && ./rebound
-```
-
  
 ## Documentation
 The full documentation with many examples, changelogs and tutorials can be found at
@@ -72,9 +13,6 @@ The full documentation with many examples, changelogs and tutorials can be found
 If you have trouble installing or using REBOUND, please open an issue on github and we'll try to help as much as we can.
 
 There are also short YouTube videos describing various aspects of REBOUND available at https://www.youtube.com/channel/UC2wonKI0wWwGi5-JqJtMsYQ/videos.
-
-## Additional Physics
-To easily incorporate additional physics into your REBOUND simulations, see REBOUNDx at https://github.com/dtamayo/reboundx
 
 
 ## Papers
@@ -133,3 +71,4 @@ REBOUND is distributed in the hope that it will be useful, but WITHOUT ANY WARRA
 
 You should have received a copy of the GNU General Public License along with REBOUND.  If not, see <http://www.gnu.org/licenses/>.
 
+ -->
