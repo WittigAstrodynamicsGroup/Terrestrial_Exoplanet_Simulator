@@ -1,3 +1,24 @@
+# Welcome to the Terrestrial Exoplanet Simulator (TES) repository
+TES is an n-body integration package for modelling the evolution of exoplanet systems. TES is a highly rapid and precise integration scheme when used to approximate the behaviour of systems with a dominant central mass, e.g. a planetary system.
+
+## Usage
+TES is integrated within the wider REBOUND integration package for ease of use and to enable additional functionality. TES can be run natively in C or driven through an intuitive python interface. An example of the Apophis flyby of the Earth in 2029 can be found in `examples/apophis_flyby` and easily compiled and run by navigating to this directory and using the command `make; ./rebound`. The python interface is also just as simple to install, from the top level directory call `make clean; make; python setup.py build; pip install -e .` and TES will be installed as a python library that can be imported with the python command `import rebound`.
+
+## Acknowledgments
+If you use this code or parts of this code for results presented in a scientific publication, we would greatly appreciate a citation.
+
+To cite TES, please reference the paper:
+Bartram and Wittig 2021, (Monthly Notices of the Royal Astronomical Society, Volume 504, Issue 1, June 2021, Pages 678–691) https://doi.org/10.1093/mnras/stab896
+
+Also, please cite REBOUND too. The simplest way to find the citations relevant to the specific setup of your REBOUND simulation is: 
+
+```python
+sim = rebound.Simulation()
+-your setup-
+sim.cite()
+```
+
+
 <!-- 
 # Welcome to REBOUND
 
